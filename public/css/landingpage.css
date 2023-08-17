@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Netflix Sans;
+}
+
+.intro {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: url("/clone-netflix/Images/landing.jpg");
+    height: 810px;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    
+}
+
+.logo {
+    width: 216px; 
+    height: 90.25px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute
+}
+
+.email-form {
+    width: 714px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container {
+    width: 504px;
+    padding: 22px;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.input-container input {
+    font-size: 16px;
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 400;
+    color: #797979;
+    border: none;
+    outline: none;
+}
+
+.submit-btn {
+    width: 208px;
+    height: 64px;
+    padding: 22px;
+    background: #D6000F;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 400;
+}
+
+.icon-container {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.arrow {
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
+    transform: rotate(45deg);
+}
+
+.divider {
+
+    height: 8px; 
+    position: relative;
+    background: #1A1A1A;
+    margin: 5px;
+}
+
+h2 {
+    color: white; 
+    font-size: 38px;
+}
+
+.text {
+    color: white; 
+    font-size: 26px;
+}
+
+.text2 {
+    color: white; 
+    font-size: 26px;
+}
+
+.text3 {
+    color: white; 
+    font-size: 26px;
+}
+
+
+img {
+    width: 471px; 
+    height: 353px;
+}
+
+
+.feature1 {
+    display: flex;
+    width: 1440px;
+    padding: 56px 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature2 {
+    display: flex;
+    width: 1440px;
+    padding: 56px 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature3 {
+    display: flex;
+    width: 1440px;
+    padding: 56px 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature4 {
+    display: flex;
+    width: 1440px;
+    padding: 56px 160px;
+    justify-content: space-between;
+    align-items: center;
+}
