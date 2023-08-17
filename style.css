@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.featured {
+    position: relative;
+}
+
+.featured img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-info {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
