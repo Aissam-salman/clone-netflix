@@ -1,37 +1,81 @@
-.cover {
-
-    display: block;
-    margin: 0 auto;
-
-
-}
-
 .image-container {
-    position: relative;
-    display: inline-block;
+    position: relative; /* Utilisez "relative" au lieu de "absolute" pour que l'image-overlay soit positionnée par rapport à ce conteneur */
+    text-align: center; /* Centrage horizontal du bouton */
 }
+
+.cover {
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
 
 .image-overlay {
-    
-    margin-top: 770px;
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 12%;
-    background-color: rgba(0, 0, 0, 0.651); /* Fond semi-transparent */
-    z-index: 1; /* Pour superposer sur l'image */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligner le bouton en bas */
+    align-items: center; /* Centrer horizontalement */
+    background-color: rgba(255, 237, 237, 0.7); /* Couleur d'arrière-plan semi-transparente */
+    opacity: 0; /* Masquer l'overlay par défaut */
+    transition: opacity 0.3s ease-in-out; /* Ajouter une transition fluide */
 }
 
+
+
 .overlay-button {
-    position: absolute;
-    top: 90%; /* Centrer verticalement */
-    left: 60%; /* Centrer horizontalement */
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #fdfdfd;
-    color: rgb(0, 0, 0);
+    background: none;
     border: none;
+    color: white;
     cursor: pointer;
- z-index: 2;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.overlay-button img {
+    width: 20px; /* Ajustez la taille du logo de lecture selon vos besoins */
+    margin-right: 5px;
+}
+
+body {
+
+    background: linear-gradient(to right, #000000, #000000f6);
+
+}
+
+h1 {
+    position: relative; /* Utilisez "relative" au lieu de "absolute" pour que l'image-overlay soit positionnée par rapport à ce conteneur */
+    text-align: center;
+   color: red;
+    font-size: 35px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+
+.categorie-buttons {
+    text-align: center;
+}
+
+.categorie-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+    border: solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+.titre {
+
+margin-bottom: 25px;
+
 }
