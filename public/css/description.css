@@ -1,1 +1,7 @@
-/* dedez */
+/* description modal */
+.page {
+    background : rgba(20, 20, 20, 0.7);
+    background-attachment: fixed;
+    position: fixed;
+    z-index: -10;
+}
