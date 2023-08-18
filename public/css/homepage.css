@@ -45,43 +45,27 @@ input, select{
     vertical-align: middle;
 }
 
-@font-face {
-    font-family: 'Netflix-light';
-    src: url('/font/NetflixSans-Light.otf') format('truetype');
-}
-@font-face {
-    font-family: 'Netflix-regular';
-    src: url('/font/NetflixSans-Regular.otf') format('truetype');
-}
-@font-face {
-    font-family: 'Netflix-medium';
-    src: url('/font/NetflixSans-Medium.otf') format('truetype');
-}
-@font-face {
-    font-family: 'Netflix-bold';
-    src: url('/font/NetflixSans-Bold.otf') format('truetype');
-}
 
 h1 {
-    font-family: 'Netflix-light';
+    font-family: 'netflix_sanslight';
     font-size: var();
     color: var(--primary-color);
 }
 
 h2 {
-    font-family: 'Netflix-light';
+    font-family: 'netflix_sanslight';
     font-size: var();
     color: var(--primary-color);
 }
 
 h3 {
-    font-family: 'Netflix-light';
+    font-family: 'netflix_sanslight';
     font-size: var();
     color: var(--primary-color); 
 }
 
 a, p {
-    font-family: 'Netflix-light';
+    font-family: 'netflix_sanslight';
     font-size: var();
     color: var(--primary-color); 
 }
