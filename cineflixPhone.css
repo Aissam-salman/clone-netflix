@@ -94,3 +94,132 @@ width: 300px;
     box-shadow: 2px 2px 5px rgba(216, 216, 216, 0.514);
 color: rgba(119, 119, 119, 0.596);
 }
+
+.section1 {
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px;
+}
+
+
+.films-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.film-img {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section2 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+
+.films-container2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list2 {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.serieimg {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.section3 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 25px;
+
+}
+
+.films-container3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list3 {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.animationimg {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
+}
+
+
+.section4 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 25px;
+} 
+
+
+.films-container4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list4 {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.docimg {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
+}
