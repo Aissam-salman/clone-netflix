@@ -512,7 +512,7 @@
     border-radius: 0.25em;
     cursor: pointer;
     overflow: hidden;
-    padding: 1em;
+    padding: 3em;
     position: relative;
     border-top: 1px solid #404040;
     min-height: 8em;
@@ -522,6 +522,7 @@
 .index-episode {
     color: #d2d2d2;
     display: flex;
+    font-size: 2em;
     flex: 0 0 7%;
     justify-content: center;
 }
@@ -574,7 +575,23 @@
 }
 
 
-
+progress.titleCard-progress {
+    background-color: grey;
+    bottom: 0;
+    color: #e94c54;
+    block-size: 1em;
+    inline-size: 10em;
+    height: 0.3em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+}
+progress.titleCard-progress::-webkit-progress-value {
+    background-color: #e94c54;
+}
 
 
 
@@ -598,4 +615,21 @@
 
 .title_duration {
     padding-left: 10px;
+}
+
+.data-episode_paragraphe {
+    margin: 0;
+    padding: 0 1em 1em;
+    color: #d2d2d2;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.current-ep {
+    background-color: #333;
 }
