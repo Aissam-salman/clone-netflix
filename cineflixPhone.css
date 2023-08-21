@@ -24,12 +24,14 @@
     margin-right: 10px; /* Ajustez l'espacement entre les boutons */
 }
 
-.profil {
+.profil1 {
 
+
+    margin-top: 15px;
 color: white;
 margin-left: 10px;
 font-family: 'Montserrat', sans-serif;
-font-size: 12px;
+font-size: 18px;
 }
 
 .nav-bar {
@@ -56,8 +58,8 @@ font-size: 12px;
 }
 .button-container {
    
-    margin: 20px;
-    
+    margin-top: 25px;
+    margin-left: 20px;
 }
 
 .bouton1 {
@@ -98,17 +100,18 @@ font-size: 12px;
     position: absolute;
     bottom: 0%;
     left: 0;
-    width: 100%;
+    width: 96%;
     height: 10%;
     background-color: rgba(31, 31, 31, 0.5);
     z-index: 1;
     border-radius: 10px;
     background: linear-gradient(to bottom,  #000000cc, rgba(0, 0, 0, 0.836));
+    margin-left: 6px;
 }
 
 .cover {
     display: block;
-    width: 100%;
+    width: 95%;
     height: 100%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(216, 216, 216, 0.514);
@@ -144,12 +147,12 @@ bottom: 50px;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    padding: 5px;
+    padding: 3px;
     width: calc(50% - 10px); /* Calculer la largeur pour chaque bouton */
     font-family: 'Montserrat', sans-serif;
 }
 .overlay-button img {
-    width: 10px;
+    width: 8px;
     margin-right: 5px;
 }
 
@@ -224,6 +227,8 @@ width: 300px;
     margin-right: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
 }
 
 .section2 {
@@ -255,6 +260,8 @@ width: 300px;
     margin-right: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
 }
 
 
