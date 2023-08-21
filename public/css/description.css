@@ -5,6 +5,7 @@
     line-height: 1.2;
     font-size: 10px;
     color: #fff;
+    color: #fff;
 }
 
  .overlay {
@@ -88,6 +89,8 @@
     position: absolute;
     width: 40%;
  }
+ }
+
 
 
 .maid-title {
@@ -96,7 +99,7 @@
 }
 
 .ctn__progress-bar {
-    margin: 0.5em 0;
+    margin: 20px 0;
 }
 
 .progress {
@@ -124,4 +127,190 @@
     font-size: 16px;
     margin: 0 0 0 8px;
     color: hsla(0,0%,100%,.7);
+}
+
+.ctn__btn-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 2;
+}
+
+.play-link {
+    margin: 0.25em;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn-play {
+    background: #fff;
+    color: #000;
+    font-size: 12px;
+    max-height: 42px;
+    padding-left: 0.6rem;
+    padding-right: 1.6rem !important;
+    -webkit-box-align: center;
+    display: flex;
+    align-items: center;
+    appearance: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    -webkit-box-pack: center;
+    white-space: nowrap;
+    will-change: background-color, color;
+}
+
+.ctn__play-icon {
+    line-height: 0;
+    height: 2.4rem;
+    width: 2.4rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.play-icon {
+    line-height: 0;
+    height: 19px;
+    width: 19px;
+    overflow: hidden;
+    overflow-clip-margin: content-box;
+}
+
+.space {
+    display: flex;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    width: 0.2rem;
+    font: 10px;
+}
+
+.play-text {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.ctn_add {
+    margin: 0.25em;
+    position: relative;
+}
+
+.btn_add {
+    line-height: 0;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(42,42,42,.6);
+    border-color: hsla(0,0%,100%,.5);
+    border-width: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    border-radius: 50%;
+}
+
+.ctn_add-img {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-img {
+    opacity: 0.6;
+    width: auto;
+    height: 1rem;
+}
+
+
+.ctn_like {
+    margin: 0.25em;
+    position: relative;
+}
+
+.btn_like {
+    line-height: 0;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(42,42,42,.6);
+    border-color: hsla(0,0%,100%,.5);
+    border-width: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    border-radius: 50%;
+}
+
+.ctn_like-img {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like-img {
+    opacity: 0.6;
+    width: auto;
+    height: 1rem;
+}
+
+.ctn__btn-mute {
+    position: absolute;
+    bottom: 10%;
+    right: 3em;
+    opacity: 0.4;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn_mute {
+    line-height: 0;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(42,42,42,.6);
+    border-color: hsla(0,0%,100%,.5);
+    border-width: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    border-radius: 50%;
+}
+
+.ctn_mute-img {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mute-img {
+    opacity: 0.6;
+    width: auto;
+    height: 1.1rem;
 }
