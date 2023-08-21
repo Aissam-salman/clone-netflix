@@ -5,6 +5,7 @@
     line-height: 1.2;
     font-size: 10px;
     color: #fff;
+    color: #fff;
 }
 
  .overlay {
@@ -88,6 +89,8 @@
     position: absolute;
     width: 40%;
  }
+ }
+
 
 
 .maid-title {
