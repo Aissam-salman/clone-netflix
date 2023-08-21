@@ -423,3 +423,179 @@
     margin-top: 1.25em;
     margin-bottom: 0.5em;
 }
+
+.ctn_resume {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0.5em;
+}
+
+.detail-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-person, .tag-genres, .tag-category {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0.5em 0.5em 0.5em 0;
+    word-break: break-word;
+}
+
+.label {
+    color: #777;
+}
+
+.item {
+    color: #ddd;
+    cursor: pointer;
+    margin: 0;
+    outline-color: #fff;
+}
+
+.item a {
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+.item-more a {
+    font-style: italic;
+}
+
+.ctn_list-episode {
+    background-color: #181818;
+    padding: 1em 0 0;
+}
+
+.list-episode_header {
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.ctn_header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    font-size: 24px;
+    font-family: 'netflix_sans_bold', Roboto;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+.header-type {
+    font-size: 18px;
+    justify-self: end;
+    margin-bottom: 0.5em;
+}
+
+.ctn_episode {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.card_episode {
+    display: flex;
+    align-items: center;
+    border-radius: 0.25em;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 1em;
+    position: relative;
+    border-top: 1px solid #404040;
+    min-height: 8em;
+
+}
+
+.index-episode {
+    color: #d2d2d2;
+    display: flex;
+    flex: 0 0 7%;
+    justify-content: center;
+}
+
+.imgWrapper-episode {
+    border-radius: 4px;
+    flex: 0 0 18%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctn_img-episode {
+    line-height: 1.2;
+}
+
+.img-episode {
+    display: block;
+    max-width: 100%;
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.playIcon {
+    align-items: center;
+    background-image: linear-gradient(195deg,hsla(0,0%,9%,.7),hsla(0,0%,9%,.5) 10%,transparent 25%);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.playIcon svg {
+    background-color: rgba(30,30,20,.5);
+    border: 1px solid #fff;
+    border-radius: 2em;
+    height: 3em;
+    opacity: 0;
+    padding: 0.5em;
+    transition: opacity .2s ease-in;
+    width: 3em;
+    overflow: hidden;
+}
+
+.card_episode:hover .playIcon svg {
+    opacity: 1;
+}
+
+
+
+
+
+
+.data-episode {
+    flex: 0 0 70%;
+    font-size: 1em;
+    min-height: 100%;
+}
+
+.data-episode__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 0.5em;
+}
+
+.title_text {
+    font-size: 1em;
+    font-family: 'netflix_sans_bold', Roboto;
+    overflow-wrap: anywhere;
+}
+
+.title_duration {
+    padding-left: 10px;
+}
