@@ -6,28 +6,68 @@
     <title>Homepage Netflix</title>
     <link rel="stylesheet" type="text/css" href="/public/css/base.css">
     <link rel="stylesheet" type="text/css" href="cineflixPhone.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
-<body>
-   
-   
 
-<div class="image-container">
-        <div class="image-overlay">
+<header>
+
+   <nav>
+    
+    <div class = "nav-bar">
+
+
+        <div class = "altbouton">
+            <button class = "alt1">
+                <iconify-icon icon="material-symbols:search"></iconify-icon>
+            </button>
+            <button class = "alt2">
+                <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+
+        </div>
+
+
+        <div class = "profil">
+            <h1>Profil de utilisateur1</h1>
+            </div>
+    <div class="button-container">
+   
+        <button class = "bouton1">Films</button> 
+        <button class = "bouton1">Séries</button> 
+        <button class = "bouton1">Catégories</button> 
+        
+        </div>
+
+    </div>
+
+ </nav>
+</header>
+    
+    
+    
+    <body>
+
+    <div class="image-container">
+        
+          <div class="image-overlay">
         
         <img src="https://static.hitek.fr/img/up_m/1471953336/affichelesgardiensdelagalaxievol3.jpeg" class="cover" alt="maincover">
-        
-    
-    
     </div>
-
+    <div class="overlay-button-container">
         <button class="overlay-button">
-            <img src="Images/istockphoto-586085254-170667a.jpg" alt="Lecture">
-            Play
+            <iconify-icon icon="ph:play-fill"></iconify-icon>
+            Lecture
+        </button>
+        <button class="overlay-button">
+            <iconify-icon icon="bi:download"></iconify-icon>
+            Télécharger
         </button>
     </div>
+
+    </div>
     
     
-    <div id = "bloc">
+    
     <h2 class="section1"> Films</h2>
 
 <div class="films-container">
@@ -79,7 +119,7 @@
        
     </div>
 </div>
-    </div>
+   
 </body>
 </html>
 
