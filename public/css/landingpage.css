@@ -219,3 +219,9 @@ footer > p {
     font-style: normal;
     line-height: normal;
 }
+
+.fimg {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
