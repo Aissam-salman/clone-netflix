@@ -83,35 +83,6 @@ a, p {
     width: 100%;
 }
 
-.homepage::before,
-.homepage::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    z-index: -1;
-}
-
-.homepage::before {
-    background: linear-gradient(to bottom, var(--secondary-color), transparent);
-    height: 5vw;
-    top: 0;
-}
-
-.homepage::after {
-    background: linear-gradient(to top, var(--secondary-color), var(--secondary-color), transparent);
-    background-size: contain;
-    height: 18vw;
-    top: 47vw;
-}
-
-header, .hero-banner {
-    width: 100vw;  /* largeur */
-    margin: auto;
-    background: transparent;
-}
-
-
 
 
 
@@ -124,6 +95,9 @@ header {
     display: flex;
     align-items: center;
     padding: 25px 60px;
+    width: 100vw;  /* largeur */
+    margin: auto;
+    background: transparent;
     transition: ease 0.5s;
 }
 
@@ -217,25 +191,70 @@ header .navigation .navigation-items a:hover:before {
 
 
 
-main {
-    padding: 0;
-    margin: 0;
-}
-
-
 
 
 
 /* HERO BANNER */
+.hero-slides {
+    z-index: 1;
+    height: 60vh;
+    width: 100%;
+}
+
+
+/* EFFET LINEAR-GRADIENT SUR LE HERO-SLIDES */
+.hero-slides::before,
+.hero-slides::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+}
+
+.hero-slides::before {
+    background: linear-gradient(to bottom, var(--secondary-color), transparent);
+    height: 5vw;
+    top: 0;
+}
+
+.hero-slides::after {
+    background: linear-gradient(to top, var(--secondary-color), var(--secondary-color), transparent);
+    background-size: contain;
+    height: 18vh;
+    top: 90vh;
+}
+/* FIN EFFET LINEAR-GRADIENT SUR LE HERO-SLIDES */
+
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center top;
+    animation: slideshow 15s infinite;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
 .hero-banner {
+    width: 100vw;  /* largeur */
+    margin: auto;
+    background: transparent;
     position: relative;
     z-index: 2;
     height: 410px;
-    margin: 250px 0 70px 60px;
+    padding: 250px 0 70px 60px;
 }
 
 .hero-banner > img {
-    width: 408px;
+    height: 130px;
     margin-bottom: 15px;
 }
 
@@ -274,6 +293,7 @@ main {
     line-height: normal;
     border: none;
     border-radius: 5px;
+    opacity: 1 !important;
 }
 
 .hero-banner > .hero-buttons > a > .play-button {
@@ -308,53 +328,6 @@ main {
 
 
 
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-size: cover;
-    background-position: center top;
-    animation: slideshow 20s infinite;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-@keyframes slideshow {
-    100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
-#slide1 {
-    background-image: url(/Images/homepage-media/MoviePoster1.png);
-    background-size: cover; /* Ajoutez cette ligne pour ajuster la taille de l'image */
-    animation-delay: 0s;
-}
-
-#slide2 {
-    background-image: url(/Images/homepage-media/MoviePoster2.jpeg);
-    background-size: cover; /* Ajoutez cette ligne pour ajuster la taille de l'image */
-    animation-delay: 5s;
-}
-
-#slide3 {
-    background-image: url(/Images/homepage-media/MoviePoster3.jpeg);
-    background-size: cover; /* Ajoutez cette ligne pour ajuster la taille de l'image */
-    animation-delay: 10s;
-}
-
-
-
 
 
 
@@ -366,30 +339,27 @@ main {
 
 
 /* CAROUSEL FILMS */
+.carousel-container {
+    position: relative;
+    z-index: 2;
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
+.titre {
+    position: relative;
+    padding: 0 60px;
+    margin-top: 50px;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
 .movie-carousel {
     position: relative;
     padding: 0 60px;
     overflow: hidden;
     width: 100%;
     margin: auto;
-}
-
-.titre1 h2 {
-    padding: 0 60px;
-    margin-top: 32vw;
-    font-size: 26px;
-    margin-bottom: 10px;
-    opacity: 1 !important;
-    transition: none !important;
-}
-
-.titre h2 {
-    padding: 0 60px;
-    margin-top: 50px;
-    font-size: 26px;
-    margin-bottom: 10px;
-    opacity: 1 !important;
-    transition: none !important;
 }
 
 .movie-carousel > .movies-list {
@@ -463,7 +433,6 @@ main {
     opacity: 0.6;
 }
 
-
 .movie-carousel .fa.fa-angle-left:first-child {
     display: none;
     margin-left: 0;
@@ -472,8 +441,6 @@ main {
 .movie-carousel .fa.fa-angle-right:last-child {
     margin-right: 0;
 }
-
-
 
 .movie-carousel .film-rank {
     display: flex;
@@ -502,8 +469,9 @@ main {
 /* FOOTER */
 footer {
     z-index: 999;
-    padding: 20px 278.5px;
-    width: 1320px;  /* largeur */
+    padding: 20px 10vw;
+    width: 90vw;  /* largeur */
+    max-width: 1320px;
     margin: auto;
     margin-top: 150px;
 }

@@ -44,3 +44,32 @@ function initCarousel(carousel) {
 // Appeler la fonction pour toutes les carousels
 const carousels = document.querySelectorAll(".movie-carousel");
 carousels.forEach(initCarousel);
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    let currentSlideIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.style.opacity = 1;
+            } else {
+                slide.style.opacity = 0;
+            }
+        });
+    }
+
+    function animateSlides() {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        showSlide(currentSlideIndex);
+    }
+
+    // Afficher le premier slide
+    showSlide(currentSlideIndex);
+
+    // Démarrer l'animation toutes les 5 secondes
+    setInterval(animateSlides, 5000);
+});
