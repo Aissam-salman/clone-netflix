@@ -1,37 +1,334 @@
-.cover {
 
-    display: block;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
 
-}
 
-.image-container {
-    position: relative;
-    display: inline-block;
-}
 
-.image-overlay {
-    
-    margin-top: 770px;
+.altbouton {
+
     position: absolute;
+    top: 21px; /* Ajustez cette valeur pour l'espacement depuis le haut */
+    right: 10px; /* Ajustez cette valeur pour l'espacement depuis la droite */
+
+}
+
+.alt1,
+.alt2 {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-width: 1px;
+    padding: 0; /* Ajustez les valeurs de rembourrage */
+    font-size: 20px; /* Ajustez la taille de la police si nécessaire */
+    cursor: pointer;
+    margin-right: 10px; /* Ajustez l'espacement entre les boutons */
+}
+
+.profil1 {
+
+
+    margin-top: 15px;
+color: white;
+margin-left: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+}
+
+.nav-bar {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 12%;
-    background-color: rgba(0, 0, 0, 0.651); /* Fond semi-transparent */
-    z-index: 1; /* Pour superposer sur l'image */
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.774);
+    z-index: 1000; /* Z-index élevé pour être au-dessus du contenu */
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+
+.cineflix {
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100px;
+
+
+}
+.button-container {
+   
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.bouton1 {
+   
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: solid white;
+    border-width: 1px;
+    padding: 7px 9px;
+    font-size: 11px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+
+#titre {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+    
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 110px;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 96%;
+    height: 10%;
+    background-color: rgba(31, 31, 31, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+    background: linear-gradient(to bottom,  #000000cc, rgba(0, 0, 0, 0.836));
+    margin-left: 6px;
+}
+
+.cover {
+    display: block;
+    width: 95%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(216, 216, 216, 0.514);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.test1 {
+
+bottom: 50px;
+
+
+}
+.overlay-button-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    z-index: 2;
 }
 
 .overlay-button {
-    position: absolute;
-    top: 90%; /* Centrer verticalement */
-    left: 60%; /* Centrer horizontalement */
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #fdfdfd;
-    color: rgb(0, 0, 0);
-    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: rgba(250, 235, 215, 0.74);
+    color: rgba(255, 255, 255, 0.952);
     cursor: pointer;
- z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 3px;
+    width: calc(50% - 10px); /* Calculer la largeur pour chaque bouton */
+    font-family: 'Montserrat', sans-serif;
 }
+.overlay-button img {
+    width: 8px;
+    margin-right: 5px;
+}
+
+
+body {
+
+    background-color: black;
+
+}
+
+
+
+.categorie-buttons {
+    text-align: center;
+margin-top:  20px;
+}
+
+.categorie-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: white;
+    border: solid red;
+    border-radius: 15px;
+    cursor: pointer;
+    
+    
+}
+
+
+.titre {
+display: block;
+margin: 0 auto;
+
+}
+
+.title {
+
+width: 300px;
+
+}
+
+
+.section1 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+.films-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.film-img {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
+}
+
+.section2 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+.films-container2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list2 {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.serieimg {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
+}
+
+
+.section3 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+
+}
+
+.films-container3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list3 {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.animationimg {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
+}
+
+
+.section4 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+} 
+
+
+.films-container4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+
+
+.films-list4 {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+.docimg {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 108px;
+    height: 152px; 
+}
+

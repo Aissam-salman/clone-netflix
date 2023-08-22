@@ -1,7 +1,6 @@
 body {
     background-color: black;
     color: white;
-    font-family: Netflix Sans;
 }
 
 .intro {
@@ -13,7 +12,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 72px;
-    
 }
 
 .logo {
@@ -22,68 +20,6 @@ body {
     left: 0px; 
     top: 0px; 
     position: absolute
-}
-
-.email-form {
-    width: 714px;
-    height: 64px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-container {
-    width: 504px;
-    padding: 22px;
-    background: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.input-container input {
-    font-size: 16px;
-    font-family: 'Netflix Sans', sans-serif;
-    font-weight: 400;
-    color: #797979;
-    border: none;
-    outline: none;
-}
-
-.submit-btn {
-    width: 208px;
-    height: 64px;
-    padding: 22px;
-    background: #D6000F;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    font-size: 30px;
-    font-family: 'Netflix Sans', sans-serif;
-    font-weight: 400;
-}
-
-.icon-container {
-    width: 32px;
-    height: 32px;
-    position: relative;
-}
-
-.arrow {
-    width: 8px;
-    height: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-right: 1px white solid;
-    border-bottom: 1px white solid;
-    transform: rotate(45deg);
 }
 
 .divider {
@@ -97,6 +33,7 @@ body {
 h2 {
     color: white; 
     font-size: 38px;
+   
 }
 
 .text {
@@ -121,34 +58,159 @@ img {
 }
 
 
-.feature1 {
+.feature {
     display: flex;
     width: 1440px;
-    padding: 56px 160px;
+    height: 400px;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
-.feature2 {
-    display: flex;
-    width: 1440px;
-    padding: 56px 160px;
-    justify-content: space-between;
-    align-items: center;
+.titre {
+    padding-top: 200px;
 }
 
-.feature3 {
-    display: flex;
-    width: 1440px;
-    padding: 56px 160px;
-    justify-content: space-between;
-    align-items: center;
+.email {
+    width: 100%;
+    max-width: 600px;
+    padding: 14px 24px;
+    background-color: rgba(22, 22, 22, 0.7);
+    border-color: rgba(128, 128, 128, 0.7);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
 }
 
-.feature4 {
-    display: flex;
-    width: 1440px;
-    padding: 56px 160px;
-    justify-content: space-between;
-    align-items: center;
+button {
+    background-color: #E50914;
+    border: none;
+    color: #fff;
+    padding: 14px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
 }
+
+button:hover {
+    background-color: #D40712;
+    cursor: pointer;
+}
+
+.FAQ {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.abc {
+    padding: 30px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 300px;
+
+}
+
+h3 {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer {
+    padding: 20px 278.5px;
+}
+
+footer > .sociallink-footer > ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+footer > .sociallink-footer > ul >li {
+    margin-right: 20px;
+}
+
+footer > .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > .footer-links > ul > li {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    color: var(--tertiary-color);
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+}
+
+footer button {
+    font-size: 13px;
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 1px;
+    background: transparent;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+footer button > #globe {
+    margin-right: 10px;
+}
+footer button > #selector {
+    margin-left: 10px;
+}
+
+footer > p {
+    font-size: 11px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.img1 {
+z-index: 1;
+position: absolute;
+margin-left: 900px;
+}
+
+.video1 {
+z-index: 0;
+position: relative;
+margin-right: 80px;
+height: 400px;
+width: 400px;
+}
+
+.img2 {
+    z-index: 1;
+    position: absolute;
+    
+    }
+    
+    .video2 {
+    z-index: 0;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin-left: 90px;
+    }
+
+    .abcd {
+        margin-left: 180px;
+    }
