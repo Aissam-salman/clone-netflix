@@ -41,7 +41,6 @@
     opacity: 1;
     margin-bottom: 32px;
     /* todo: a modif a la fin le height */
-    height: 200vh;
     background: #181818;
     border-radius: 7px;
 }
@@ -575,7 +574,7 @@
 }
 
 
-progress.titleCard-progress {
+.titleCard-progress {
     background-color: grey;
     bottom: 0;
     color: #e94c54;
@@ -591,6 +590,10 @@ progress.titleCard-progress {
 }
 progress.titleCard-progress::-webkit-progress-value {
     background-color: #e94c54;
+}
+
+.not-start {
+    width: 0;
 }
 
 
