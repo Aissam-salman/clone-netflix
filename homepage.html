@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage Netflix</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/homepage-media/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../public/css/base.css">
     <link rel="stylesheet" type="text/css" href="../public/css/homepage.css">
+    <script src="/public/js/homepage.js" defer></script>
 </head>
 <body>
-    
+<div class="homepage">
+<div class="slide" id="slide1"></div>
+<div class="slide" id="slide2"></div>
+<div class="slide" id="slide3"></div>
+
     <header>
         <a href="www.exemple.com" class="logo">
             <img src="/Images/homepage-media/NetflixLogo.png" alt="Netflix Logo">
@@ -29,18 +34,285 @@
                 <i class="fa fa-gift" aria-hidden="true"></i>
                 <i class="fa fa-bell" aria-hidden="true"></i>
                 <a href="www.exemple.com" class="profile">
-                    <img src="/homepage-media/profile-img.png" alt="avatar">
+                    <img src="/Images/homepage-media/profile-img.png" alt="avatar">
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
-
     </header>
 
+
+
     <main>
+        <main>
+            <div class="slide" id="slide1">
+                <div class="hero-banner" id="title-slide1">
+                    <img src="/Images/homepage-media/MoviePosterName1.png" alt="movie name">
+                    <p class="classification-film"><img src="/Images/homepage-media/Top10Badge.png" alt="top 10 badge">Numéro 2 en France Aujourd'hui</p>
+                    <p class="synopsis">Emir, a appris à prendre soin de lui très jeune et qui a travaillé dur et atteint un poste important dans le monde des affaires, rencontre un jour une fille qui est chanteuse de rue et sa vie change.</p>
+                    <div class="hero-buttons">
+                        <a href="www.exemple.com">
+                            <button class="play-button"><i class="fa fa-play" aria-hidden="true"></i>Regarder</button>
+                        </a>
+                        <a href="www.exemple.com">
+                            <button class="info-button"><i class="fa fa-info-circle" aria-hidden="true"></i>Plus d'Information</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+
+            <div class="hero-banner" id="titel-slide2">
+                <img src="/Images/homepage-media/MoviePosterName1.png" alt="movie name">
+                <p class="classification-film"><img src="/Images/homepage-media/Top10Badge.png" alt="top 10 badge">Numéro 4 en France Aujourd'hui</p>
+                <p class="synopsis">Erick, qui a appris à prendre soin de lui très jeune et qui a travaillé dur et atteint un poste important dans le monde des affaires, rencontre un jour une fille qui est chanteuse de rue et sa vie change.</p>
+                <div class="hero-buttons">
+                    <a href="www.exemple.com">
+                        <button class="play-button"><i class="fa fa-play" aria-hidden="true"></i>Regarder</button>
+                    </a>
+                    <a href="www.exemple.com">
+                        <button class="info-button"><i class="fa fa-info-circle" aria-hidden="true"></i>Plus d'Information</button>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <div class="slide" id="slide3">
+                <div class="hero-banner" id="titel-slide3">
+                    <img src="/Images/homepage-media/MoviePosterName1.png" alt="movie name">
+                    <p class="classification-film"><img src="/Images/homepage-media/Top10Badge.png" alt="top 10 badge">Numéro 1 en France Aujourd'hui</p>
+                    <p class="synopsis">Adenan, qui a appris à prendre soin de lui très jeune et qui a travaillé dur et atteint un poste important dans le monde des affaires, rencontre un jour une fille qui est chanteuse de rue et sa vie change.</p>
+                    <div class="hero-buttons">
+                        <a href="www.exemple.com">
+                            <button class="play-button"><i class="fa fa-play" aria-hidden="true"></i>Regarder</button>
+                        </a>
+                        <a href="www.exemple.com">
+                            <button class="info-button"><i class="fa fa-info-circle" aria-hidden="true"></i>Plus d'Information</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="titre1"><h2>Les Plus Vus Aujourd'hui</h2></div>
+            <div class="movie-carousel">
+                <div class="movies-list">
+                    <div class="arrow-container left-container">
+                        <i id="left-arrow" class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie1.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie2.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie3.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie4.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie5.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie6.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie7.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie8.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie9.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie10.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie7.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie8.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie9.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="movie-container">
+                        <img src="/Images/homepage-media/movie10.png" alt="movie-poster" class="movie-poster" draggable="false">
+                    </div>
+                    <div class="arrow-container right-container">
+                        <i id="right-arrow" class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+
+    
+    
+        <!-- TALL MOVIE POSTER CAROUSEL -->
+        <div class="titre"><h2>Les Plus Vus Aujourd'hui</h2></div>
+        <div class="movie-carousel">
+            <div class="movies-list">
+                <div class="arrow-container left-container">
+                    <i id="left-arrow" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-1.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-2.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-3.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-4.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-5.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-2.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-1.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-2.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-1.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-4.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-1.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-4.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-3.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="movie-container">
+                    <img src="/Images/homepage-media/movie-tall-3.png" alt="movie-poster" class="movie-poster"
+                        draggable="false">
+                </div>
+                <div class="arrow-container right-container">
+                    <i id="right-arrow" class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+
+<!-- RANK CAROUSEL -->
+        <div class="titre"><h2>Les Plus Vus Aujourd'hui</h2></div>
+        <div class="movie-carousel">
+            <div class="movies-list">
+                <div class="arrow-container left-container">
+                    <i id="left-arrow" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 01.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank1.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 02.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank2.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 03.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank3.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 04.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank4.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 05.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank5.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 06.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank1.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 07.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank2.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 08.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank3.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 09.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank4.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 10.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank5.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 01.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank1.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <div class="film-rank">
+                        <img src="/Images/homepage-media/Rank - 02.svg" alt="movie-rank">
+                        <img src="/Images/homepage-media/movie-rank2.png" alt="movie-poster">
+                    </div>
+                </div>
+                <div class="arrow-container right-container">
+                    <i id="right-arrow" class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+
 
     </main>
-
     <footer>
         <div class="sociallink-footer">
             <ul>
@@ -86,7 +358,10 @@
 
         
     </footer>
-
+</div>
 
 </body>
+
+
+
 </html>
