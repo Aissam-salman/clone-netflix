@@ -1,641 +1,453 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-88" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/css/base.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../public/css/description.css"
-    />
-    <title>Netflix - Description</title>
-  </head>
 
-  <body class="page">
-    <div class="overlay"></div>
-    <div class="container_modal">
-      <div class="modal">
-        <div class="modal_preview">
-          <div class="modal_close">
-            <img
-              src="/Images/img-description/close-btn.svg"
-              alt="exit"
-              class="closer"
-            />
-          </div>
-          <div class="modal_close">
-            <img
-              src="/Images/img-description/close-btn.svg"
-              alt="exit"
-              class="closer"
-            />
-          </div>
-          <img
-            class="maid_preview"
-            src="Images/img-description/maid_preview.png"
-            alt="preview maid"
-          />
-          <div class="gradient"></div>
+<head>
+  <meta charset="UTF-88" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../public/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="../public/css/description.css" />
+  <title>Netflix - Description</title>
+</head>
 
-          <div class="ctn__player">
-            <img
-              class="maid-title"
-              src="/Images/img-description/TItle-logo-serie-maid.webp"
-              alt="Titre de la série avec logo de netflix"
-            />
+<body class="page">
+  <button class="btn-launch triggers">Open</button>
+  <div class="container_modal ">
+    <div class="overlay triggers"></div>
+    <div class="modal">
+      <div class="modal_preview">
+        <div class="modal_close triggers">
+          <img src="/Images/img-description/close-btn.svg" alt="exit" class="closer" />
+        </div>
+        <img class="maid_preview" src="Images/img-description/maid_preview.png" alt="preview maid" />
+        <div class="gradient"></div>
 
-            <div class="ctn__progress-bar">
-              <div class="progress">
-                <span class="progress-bar">
-                  <span class="progress-completed"></span>
-                </span>
-                <span class="summary">4 sur 47&nbsp;min</span>
-              </div>
-            </div>
+        <div class="ctn__player">
+          <img class="maid-title" src="/Images/img-description/TItle-logo-serie-maid.webp"
+            alt="Titre de la série avec logo de netflix" />
 
-            <div class="ctn__btn-control">
-              <a href="#" class="play-link">
-                <button class="btn-play" type="button">
-                  <div class="ctn__play-icon">
-                    <img
-                      class="play-icon"
-                      src="/Images/img-description/play-btn.svg"
-                      alt="play-button"
-                    />
-                  </div>
-                  <div class="space"></div>
-                  <span class="play-text">Lecture</span>
-                </button>
-              </a>
-              <div class="ctn_add">
-                <button class="btn_add" type="button">
-                  <div class="ctn_add-img">
-                    <img
-                      class="add-img"
-                      src="/Images/img-description/check.svg"
-                      alt="check serie"
-                    />
-                  </div>
-                </button>
-              </div>
-
-              <div class="ctn_like">
-                <button class="btn_like" type="button">
-                  <div class="ctn_like-img">
-                    <img
-                      class="like-img"
-                      src="/Images/img-description/like-btn.svg"
-                      alt="like serie"
-                    />
-                  </div>
-                </button>
-              </div>
+          <div class="ctn__progress-bar">
+            <div class="progress">
+              <span class="progress-bar">
+                <span class="progress-completed"></span>
+              </span>
+              <span class="summary">4 sur 47&nbsp;min</span>
             </div>
           </div>
-          <div class="ctn__btn-mute">
-            <button class="btn_mute">
-              <div class="ctn_mute-img">
-                <img
-                  src="Images/img-description/mute-btn.svg"
-                  alt="mute"
-                  class="mute-img"
-                />
-              </div>
-            </button>
+
+          <div class="ctn__btn-control">
+            <a href="#" class="play-link">
+              <button class="btn-play" type="button">
+                <div class="ctn__play-icon">
+                  <img class="play-icon" src="/Images/img-description/play-btn.svg" alt="play-button" />
+                </div>
+                <div class="space"></div>
+                <span class="play-text">Lecture</span>
+              </button>
+            </a>
+            <div class="ctn_add">
+              <button class="btn_add" type="button">
+                <div class="ctn_add-img">
+                  <img class="add-img" src="/Images/img-description/check.svg" alt="check serie" />
+                </div>
+              </button>
+            </div>
+
+            <div class="ctn_like">
+              <button class="btn_like" type="button">
+                <div class="ctn_like-img">
+                  <img class="like-img" src="/Images/img-description/like-btn.svg" alt="like serie" />
+                </div>
+              </button>
+            </div>
           </div>
         </div>
+        <div class="ctn__btn-mute">
+          <button class="btn_mute">
+            <div class="ctn_mute-img">
+              <img src="Images/img-description/mute-btn.svg" alt="mute" class="mute-img" />
+            </div>
+          </button>
+        </div>
+      </div>
 
-        <div class="modal_content">
-          <div class="wrapper">
-            <div class="ctn">
-              <div class="ctn_grid-detail">
-                <div class="detail-left">
-                  <div class="detail__info">
-                    <div>
-                      <div class="ctn__info">
-                        <div class="info1"></div>
-                        <div class="info2">
-                          <div class="year">2021</div>
-                          <span class="duration">Mini-série</span>
-                          <span class="quality">HD</span>
-                        </div>
-                      </div>
-                      <div class="ctn__age">
-                        <a class="about" href="#">
-                          <span class="cadre_age">
-                            <span class="age">16+</span>
-                          </span>
-                        </a>
+      <div class="modal_content">
+        <div class="wrapper">
+          <div class="ctn">
+            <div class="ctn_grid-detail">
+              <div class="detail-left">
+                <div class="detail__info">
+                  <div>
+                    <div class="ctn__info">
+                      <div class="info1"></div>
+                      <div class="info2">
+                        <div class="year">2021</div>
+                        <span class="duration">Mini-série</span>
+                        <span class="quality">HD</span>
                       </div>
                     </div>
+                    <div class="ctn__age">
+                      <a class="about" href="#">
+                        <span class="cadre_age">
+                          <span class="age">16+</span>
+                        </span>
+                      </a>
+                    </div>
                   </div>
-                  <div class="margin-bot"></div>
-                  <div class="ctn__description">
-                    <b>S1:E3</b>&nbsp;&nbsp;"Du verre dépoli par les flots"
+                </div>
+                <div class="margin-bot"></div>
+                <div class="ctn__description">
+                  <b>S1:E3</b>&nbsp;&nbsp;"Du verre dépoli par les flots"
+                </div>
+                <div class="ctn_resume">
+                  <div class="resume">
+                    Tout en louvoyant dans le labyrinthe de l'aide publique,
+                    Alex bataille avec Sean pour la garde de Maddy et
+                    s'attaque à un chantier de nettoyage qui manque de la
+                    détruire.
                   </div>
-                  <div class="ctn_resume">
-                    <div class="resume">
+                </div>
+              </div>
+              <div class="detail-right">
+                <div class="tag-person">
+                  <span class="label">Distribution&nbsp;:</span>
+                  <span class="item"><a href="#"> Margaret, </a></span>
+                  <span class="item"><a href="#"> Andie MacDowell, </a></span>
+                  <span class="item"><a href="#"> Margaret, </a></span>
+                  <span class="item"><a href="#"> Nick Robinson, </a></span>
+                  <span class="item item-more"><a href="#"> plus </a></span>
+                </div>
+                <div class="tag-genres">
+                  <span class="label">Genres&nbsp;:</span>
+                  <span class="item"><a href="#"> Série dramatiques, </a></span>
+                  <span class="item"><a href="#"> Séries US, </a></span>
+                  <span class="item"><a href="#"> Séries inspirées de livres, </a></span>
+                </div>
+                <div class="tag-category">
+                  <span class="label">Ce programme est&nbsp;:</span>
+                  <span class="item"><a href="#"> Intimiste, </a></span>
+                  <span class="item"><a href="#"> Émotion, </a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ctn">
+            <div class="ctn_list-episode">
+              <div class="list-episode_header">
+                <div class="ctn_header-title">
+                  <h3 class="header-title">Épisodes</h3>
+                </div>
+                <div class="header-type">Mini-série</div>
+              </div>
+              <div class="ctn_episode">
+                <div class="card_episode">
+                  <div class="index-episode">1</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABVnud_axLaHh-p39BgTq9gZfdop1fqlsX5JhZ1wE0NgyuJAuUTgCpDeW7uYKTur5aOoDHCePs18Z3kuBnHhnnrZcLWydofGp1jXuCqQL25XWGf6hzNdO8A8x.jpg?r=53d"
+                        alt="L'appel des sirènes" />
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress" max="1" value="0.9494549058473737"></progress>
+                  </div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">L'appel des sirènes</span>
+                      <span><span class="title_duration">50&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      Une nuit, Alex s'enfuit avec Maddy. Avec l'aide des
+                      services sociaux, elle décroche un job chez Value Maids,
+                      mais constate vite que ses problèmes ne font que
+                      commencer.
+                    </p>
+                  </div>
+                </div>
+                <div class="card_episode">
+                  <div class="index-episode">2</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQMtbjK_FVlhI9mk39_hcmfZeX6HUwkbseq2hjv3KZA2IzJU2dkqHQKqkVNRomnoIdKXvVNPUtlcMT3GYOxJSMA2GLh6GA4SLU7NirxPx__T6e3jnEet6TIY.jpg?r=1aa"
+                        alt="Les petits poneys" />
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress" max="1" value="0.8494549058473737"></progress>
+                  </div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">Les petits poneys</span>
+                      <span><span class="title_duration">52&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      Au terme d'une veille interminable au terminal du ferry,
+                      Alex trouve un abri avec sa fille, mais des problèmes de
+                      garde et les plaintes d'une cliente la poussent à bout.
+                    </p>
+                  </div>
+                </div>
+                <div class="card_episode current-ep">
+                  <div class="index-episode">3</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQMtbjK_FVlhI9mk39_hcmfZeX6HUwkbseq2hjv3KZA2IzJU2dkqHQKqkVNRomnoIdKXvVNPUtlcMT3GYOxJSMA2GLh6GA4SLU7NirxPx__T6e3jnEet6TIY.jpg?r=1aa"
+                        alt="Les petits poneys" />
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress" max="1" value="0.1018"></progress>
+                  </div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">Du verre dépoli par les flots</span>
+                      <span><span class="title_duration">47&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
                       Tout en louvoyant dans le labyrinthe de l'aide publique,
                       Alex bataille avec Sean pour la garde de Maddy et
                       s'attaque à un chantier de nettoyage qui manque de la
                       détruire.
-                    </div>
+                    </p>
                   </div>
                 </div>
-                <div class="detail-right">
-                  <div class="tag-person">
-                    <span class="label">Distribution&nbsp;:</span>
-                    <span class="item"><a href="#"> Margaret, </a></span>
-                    <span class="item"><a href="#"> Andie MacDowell, </a></span>
-                    <span class="item"><a href="#"> Margaret, </a></span>
-                    <span class="item"><a href="#"> Nick Robinson, </a></span>
-                    <span class="item item-more"><a href="#"> plus </a></span>
+                <div class="card_episode ">
+                  <div class="index-episode">4</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQw0K4-sMXzmVyahAJ5piAtxbqdFBuN16ePxGyNVZ5JXwGWcuw6hfT6hQxA2AcHANPEusFASL6g3bVUAc7wfH7ZqRor8vKxIXhH3QFRbYQFMOGOzUcyBW20R.jpg?r=66f"
+                        alt="Le prix du cachemire">
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress not-start" max="1" value="0"></progress>
                   </div>
-                  <div class="tag-genres">
-                    <span class="label">Genres&nbsp;:</span>
-                    <span class="item"
-                      ><a href="#"> Série dramatiques, </a></span
-                    >
-                    <span class="item"><a href="#"> Séries US, </a></span>
-                    <span class="item"
-                      ><a href="#"> Séries inspirées de livres, </a></span
-                    >
-                  </div>
-                  <div class="tag-category">
-                    <span class="label">Ce programme est&nbsp;:</span>
-                    <span class="item"><a href="#"> Intimiste, </a></span>
-                    <span class="item"><a href="#"> Émotion, </a></span>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">Le prix du cachemire</span>
+                      <span><span class="title_duration">48&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      En faisant le ménage dans la somptueuse maison de Regina pour Thanksgiving, Alex se projette dans
+                      cette vie de luxe, et pousse même le fantasme un peu plus loin.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="ctn">
-              <div class="ctn_list-episode">
-                <div class="list-episode_header">
-                  <div class="ctn_header-title">
-                    <h3 class="header-title">Épisodes</h3>
+
+                <div class="card_episode ">
+                  <div class="index-episode">5</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABf0KiPkfHtVBTiKvZgUfPz-5jyt8Jk178pIyUAxjhxfl_8z_q65cgbzNtW9jqV-L77zpyMkYVi39Q6MpvhomYxUG0Le4WXZz6-NDHolQYe_8qnvNbnfdiC96.jpg?r=169"
+                        alt="Les enfances volées">
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress not-start" max="1" value="0"></progress>
                   </div>
-                  <div class="header-type">Mini-série</div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">Les enfances volées</span>
+                      <span><span class="title_duration">59&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      En faisant le ménage dans la somptueuse maison de Regina pour Thanksgiving, Alex se projette dans
+                      cette vie de luxe, et pousse même le fantasme un peu plus loin.
+                    </p>
+                  </div>
                 </div>
-                <div class="ctn_episode">
-                  <div class="card_episode">
-                    <div class="index-episode">1</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img
-                          class="img-episode"
-                          src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABVnud_axLaHh-p39BgTq9gZfdop1fqlsX5JhZ1wE0NgyuJAuUTgCpDeW7uYKTur5aOoDHCePs18Z3kuBnHhnnrZcLWydofGp1jXuCqQL25XWGf6hzNdO8A8x.jpg?r=53d"
-                          alt="L'appel des sirènes"
-                        />
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress"
-                        max="1"
-                        value="0.9494549058473737"
-                      ></progress>
+                <div class="card_episode ">
+                  <div class="index-episode">6</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABX6z0_cQEVIXsoZ1u5pH_hC8z2IzvX78A-LiVuJ6Tc1z9Z7gRsT1ruVBJXeTERFsGqDbD6XsWQ4syIzYDB7d7fRD0QPtm3Qh5TPAQMVc-_dF5qJDX0Bz3KhM.jpg?r=f1a"
+                        alt="M">
                     </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text">L'appel des sirènes</span>
-                        <span
-                          ><span class="title_duration">50&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        Une nuit, Alex s'enfuit avec Maddy. Avec l'aide des
-                        services sociaux, elle décroche un job chez Value Maids,
-                        mais constate vite que ses problèmes ne font que
-                        commencer.
-                      </p>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
                     </div>
+                    <progress class="titleCard-progress not-start" max="1" value="0"></progress>
                   </div>
-                  <div class="card_episode">
-                    <div class="index-episode">2</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img
-                          class="img-episode"
-                          src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQMtbjK_FVlhI9mk39_hcmfZeX6HUwkbseq2hjv3KZA2IzJU2dkqHQKqkVNRomnoIdKXvVNPUtlcMT3GYOxJSMA2GLh6GA4SLU7NirxPx__T6e3jnEet6TIY.jpg?r=1aa"
-                          alt="Les petits poneys"
-                        />
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress"
-                        max="1"
-                        value="0.8494549058473737"
-                      ></progress>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">M</span>
+                      <span><span class="title_duration">57&nbsp;min</span></span>
                     </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text">Les petits poneys</span>
-                        <span
-                          ><span class="title_duration">52&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        Au terme d'une veille interminable au terminal du ferry,
-                        Alex trouve un abri avec sa fille, mais des problèmes de
-                        garde et les plaintes d'une cliente la poussent à bout.
-                      </p>
-                    </div>
+                    <p class="data-episode_paragraphe">
+                      Résolue à inscrire sa fille dans une meilleure école maternelle, Alex part en quête d'un nouveau
+                      logement, et ses prestations sociales ne facilitent pas sa démarche.
+                    </p>
                   </div>
-                  <div class="card_episode current-ep">
-                    <div class="index-episode">3</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img
-                          class="img-episode"
-                          src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQMtbjK_FVlhI9mk39_hcmfZeX6HUwkbseq2hjv3KZA2IzJU2dkqHQKqkVNRomnoIdKXvVNPUtlcMT3GYOxJSMA2GLh6GA4SLU7NirxPx__T6e3jnEet6TIY.jpg?r=1aa"
-                          alt="Les petits poneys"
-                        />
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress"
-                        max="1"
-                        value="0.1018"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >Du verre dépoli par les flots</span
-                        >
-                        <span
-                          ><span class="title_duration">47&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        Tout en louvoyant dans le labyrinthe de l'aide publique,
-                        Alex bataille avec Sean pour la garde de Maddy et
-                        s'attaque à un chantier de nettoyage qui manque de la
-                        détruire.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card_episode ">
-                    <div class="index-episode">4</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img class="img-episode" src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQw0K4-sMXzmVyahAJ5piAtxbqdFBuN16ePxGyNVZ5JXwGWcuw6hfT6hQxA2AcHANPEusFASL6g3bVUAc7wfH7ZqRor8vKxIXhH3QFRbYQFMOGOzUcyBW20R.jpg?r=66f" alt="Le prix du cachemire">
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress not-start"
-                        max="1"
-                        value="0"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >Le prix du cachemire</span
-                        >
-                        <span
-                          ><span class="title_duration">48&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        En faisant le ménage dans la somptueuse maison de Regina pour Thanksgiving, Alex se projette dans cette vie de luxe, et pousse même le fantasme un peu plus loin.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="card_episode ">
-                    <div class="index-episode">5</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img class="img-episode" src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABf0KiPkfHtVBTiKvZgUfPz-5jyt8Jk178pIyUAxjhxfl_8z_q65cgbzNtW9jqV-L77zpyMkYVi39Q6MpvhomYxUG0Le4WXZz6-NDHolQYe_8qnvNbnfdiC96.jpg?r=169" alt="Les enfances volées">
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress not-start"
-                        max="1"
-                        value="0"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >Les enfances volées</span
-                        >
-                        <span
-                          ><span class="title_duration">59&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        En faisant le ménage dans la somptueuse maison de Regina pour Thanksgiving, Alex se projette dans cette vie de luxe, et pousse même le fantasme un peu plus loin.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card_episode ">
-                    <div class="index-episode">6</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img class="img-episode" src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABX6z0_cQEVIXsoZ1u5pH_hC8z2IzvX78A-LiVuJ6Tc1z9Z7gRsT1ruVBJXeTERFsGqDbD6XsWQ4syIzYDB7d7fRD0QPtm3Qh5TPAQMVc-_dF5qJDX0Bz3KhM.jpg?r=f1a" alt="M">
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress not-start"
-                        max="1"
-                        value="0"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >M</span
-                        >
-                        <span
-                          ><span class="title_duration">57&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        Résolue à inscrire sa fille dans une meilleure école maternelle, Alex part en quête d'un nouveau logement, et ses prestations sociales ne facilitent pas sa démarche.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card_episode ">
-                    <div class="index-episode">7</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img class="img-episode" src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABUwF6JAV46tCykqb_tpINhzDcQz0ZU6iZzTUgvFdY7-QCeDpo5W0QafoGiDEFtpjvMdzrGZngOo9Uv_3a3RLBPdLlbtwmRcWhsfFGoO4iEfwRO3PZp6OKcmw.jpg?r=418" alt="Un poney nommé Désir">
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress not-start"
-                        max="1"
-                        value="0"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >Un poney nommé Désir</span
-                        >
-                        <span
-                          ><span class="title_duration">53&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        Tout en jonglant entre une proposition délicate et la fragilité mentale de Paula, Alex écrit sur ses clients, dont un couple qui fait chambre et désir à part.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="card_episode ">
-                    <div class="index-episode">8</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img class="img-episode" src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfAcIlaBGVI3tmaVs6R_Y7fdcx7V9XakTe7QgptU5UX13rCWt6UvSoT9iUwHxQlG1SSCCU-c0n7Lehtd9U9u33XxCbVgfCPC8evTihXyBm4DhKTw9rWF24xN.jpg?r=c8f" alt="La chasse à l'ours">
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress not-start"
-                        max="1"
-                        value="0"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >La chasse à l'ours</span
-                        >
-                        <span
-                          ><span class="title_duration">59&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        Sous une pluie de revers catastrophiques, Alex envisage pourtant d'aller à la fac tout en gérant les problèmes de santé de Paula et en donnant un coup de main à Regina.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card_episode ">
-                    <div class="index-episode">9</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img class="img-episode" src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQYI6cGVq17_msOx6b5qa3-LipKt-Im4Yg7Lox15t7XLcKmfiBcKnvsTYPyXlgd79TelYMGHJA9H17RD-VY0XACEUacuWExO9EdGH8msZD1R4qrozRzAOHHc.jpg?r=c45" alt="Bleu ciel">
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress not-start"
-                        max="1"
-                        value="0"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >Bleu ciel</span
-                        >
-                        <span
-                          ><span class="title_duration">60&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        De retour à la case départ, Alex, qui réalise à quel point elle s'est perdue en chemin, tente de trouver un refuge sûr et une bouée de sauvetage juridique.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="card_episode ">
-                    <div class="index-episode">10</div>
-                    <div class="imgWrapper-episode">
-                      <div class="ctn_img-episode">
-                        <img class="img-episode" src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWk9x8o1nbOSbq_Bu0dTpeTV73hCMp4vI-AVwiEWbGEXuooe1OOKUdFU9mBMRs0cvWE8RPgz49VcOBevq67T523846X4Wq-xqwrrmUofHdoJcLCv5d9qh3LS.jpg?r=832" alt="En un claquement de doigts">
-                      </div>
-                      <div class="playIcon">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="titleCard-playSVG ltr-0 e1mhci4z1"
-                          data-name="Play"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <progress
-                        class="titleCard-progress not-start"
-                        max="1"
-                        value="0"
-                      ></progress>
-                    </div>
-                    <div class="data-episode">
-                      <div class="data-episode__title">
-                        <span class="title_text"
-                          >En un claquement de doigts</span
-                        >
-                        <span
-                          ><span class="title_duration">54&nbsp;min</span></span
-                        >
-                      </div>
-                      <p class="data-episode_paragraphe">
-                        Soutenue par le groupe de thérapie par l'écriture créative qu'elle anime, une Alex rassérénée reprend force et espoir, et affronte Sean pour la garde de Maddy.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- todo: ajouter le reste des épisodes -->
                 </div>
+                <div class="card_episode ">
+                  <div class="index-episode">7</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABUwF6JAV46tCykqb_tpINhzDcQz0ZU6iZzTUgvFdY7-QCeDpo5W0QafoGiDEFtpjvMdzrGZngOo9Uv_3a3RLBPdLlbtwmRcWhsfFGoO4iEfwRO3PZp6OKcmw.jpg?r=418"
+                        alt="Un poney nommé Désir">
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress not-start" max="1" value="0"></progress>
+                  </div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">Un poney nommé Désir</span>
+                      <span><span class="title_duration">53&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      Tout en jonglant entre une proposition délicate et la fragilité mentale de Paula, Alex écrit sur
+                      ses clients, dont un couple qui fait chambre et désir à part.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card_episode ">
+                  <div class="index-episode">8</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfAcIlaBGVI3tmaVs6R_Y7fdcx7V9XakTe7QgptU5UX13rCWt6UvSoT9iUwHxQlG1SSCCU-c0n7Lehtd9U9u33XxCbVgfCPC8evTihXyBm4DhKTw9rWF24xN.jpg?r=c8f"
+                        alt="La chasse à l'ours">
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCarDe retour à la case départ, Alex, qui réalise à quel point elle s'est perdue en chemin, tente de trouver un refuge sûr et une bouée de sauvetage juridique.d-playSVG ltr-0 e1mhci4z1"
+                        data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress not-start" max="1" value="0"></progress>
+                  </div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">La chasse à l'ours</span>
+                      <span><span class="title_duration">59&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      Sous une pluie de revers catastrophiques, Alex envisage pourtant d'aller à la fac tout en gérant
+                      les problèmes de santé de Paula et en donnant un coup de main à Regina.
+                    </p>
+                  </div>
+                </div>
+                <div class="card_episode ">
+                  <div class="index-episode">9</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQYI6cGVq17_msOx6b5qa3-LipKt-Im4Yg7Lox15t7XLcKmfiBcKnvsTYPyXlgd79TelYMGHJA9H17RD-VY0XACEUacuWExO9EdGH8msZD1R4qrozRzAOHHc.jpg?r=c45"
+                        alt="Bleu ciel">
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress not-start" max="1" value="0"></progress>
+                  </div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">Bleu ciel</span>
+                      <span><span class="title_duration">60&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      De retour à la case départ, Alex, qui réalise à quel point elle s'est perdue en chemin, tente de
+                      trouver un refuge sûr et une bouée de sauvetage juridique.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card_episode ">
+                  <div class="index-episode">10</div>
+                  <div class="imgWrapper-episode">
+                    <div class="ctn_img-episode">
+                      <img class="img-episode"
+                        src="https://occ-0-7523-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWk9x8o1nbOSbq_Bu0dTpeTV73hCMp4vI-AVwiEWbGEXuooe1OOKUdFU9mBMRs0cvWE8RPgz49VcOBevq67T523846X4Wq-xqwrrmUofHdoJcLCv5d9qh3LS.jpg?r=832"
+                        alt="En un claquement de doigts">
+                    </div>
+                    <div class="playIcon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="titleCard-playSVG ltr-0 e1mhci4z1" data-name="Play" aria-hidden="true">
+                        <path
+                          d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <progress class="titleCard-progress not-start" max="1" value="0"></progress>
+                  </div>
+                  <div class="data-episode">
+                    <div class="data-episode__title">
+                      <span class="title_text">En un claquement de doigts</span>
+                      <span><span class="title_duration">54&nbsp;min</span></span>
+                    </div>
+                    <p class="data-episode_paragraphe">
+                      Soutenue par le groupe de thérapie par l'écriture créative qu'elle anime, une Alex rassérénée
+                      reprend force et espoir, et affronte Sean pour la garde de Maddy.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- todo: ajouter le reste des épisodes -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="public/js/description.js"></script>
+</body>
+
 </html>
