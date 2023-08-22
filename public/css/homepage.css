@@ -318,9 +318,9 @@ main {
     margin: 0;
     background-size: cover;
     background-position: center top;
-    animation: slideshow 15s infinite;
+    animation: slideshow 20s infinite;
     opacity: 0;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 @keyframes slideshow {
