@@ -12,8 +12,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 72px;
-
-    
 }
 
 .logo {
@@ -63,9 +61,10 @@ img {
 .feature {
     display: flex;
     width: 1440px;
-    padding: 56px 160px;
+    height: 400px;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 .titre {
@@ -120,7 +119,98 @@ a {
     color: rgba(255,255,255,0.7);
 }
 
-.footer {
-    padding: 20px;
-    font-size: 20px;
+footer {
+    padding: 20px 278.5px;
 }
+
+footer > .sociallink-footer > ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+footer > .sociallink-footer > ul >li {
+    margin-right: 20px;
+}
+
+footer > .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > .footer-links > ul > li {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    color: var(--tertiary-color);
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+}
+
+footer button {
+    font-size: 13px;
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 1px;
+    background: transparent;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+footer button > #globe {
+    margin-right: 10px;
+}
+footer button > #selector {
+    margin-left: 10px;
+}
+
+footer > p {
+    font-size: 11px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.img1 {
+z-index: 1;
+position: absolute;
+margin-left: 900px;
+}
+
+.video1 {
+z-index: 0;
+position: relative;
+margin-right: 80px;
+height: 400px;
+width: 400px;
+}
+
+.img2 {
+    z-index: 1;
+    position: absolute;
+    
+    }
+    
+    .video2 {
+    z-index: 0;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin-left: 90px;
+    }
+
+    .abcd {
+        margin-left: 180px;
+    }
