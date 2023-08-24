@@ -342,8 +342,7 @@ header .navigation .navigation-items a:hover:before {
 .carousel-container {
     position: relative;
     z-index: 2;
-    margin-top: -60px;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .titre {
@@ -415,7 +414,6 @@ header .navigation .navigation-items a:hover:before {
 .movie-carousel .right-container {
     right: 60px;
     background: linear-gradient(to left, #141414dc, transparent);
-    backdrop-filter: blur(to left, 0px, 10px);
 }
 
 .movie-carousel .movies-list:hover .left-container,
